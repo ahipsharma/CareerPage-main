@@ -1,236 +1,34 @@
 import React from "react";
-import Button from "./components/Button";
 import Navbar from "./components/Navbar/Navbar";
-import { CiLocationOn } from "react-icons/ci";
-import { FiPhoneCall } from "react-icons/fi";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { BsFillSendFill} from "react-icons/bs";
-import contact from "./components/contact";
+import Footer from "./components/footer";
+import Header from "./components/Header";
+import Explore from "./components/Explore";
+import Forms from "./components/Form";
+import Content from "./components/Content";
 
 const App = () => {
   return (
     <section
       className="h-screen bg-Hero bg-no-repeat bg-cover
-      font-[Poppins] md:bg-top bg-center"
-    >
+      font-[Poppins] md:bg-top bg-center">
       <Navbar />
-      <div className="flex flex-col justify-center text-center items-center h-3/4">
-        <h1 className="md:text-5xl text-1xl text-white font-semibold py-5">
-          EXPLORE THE CAREER <br></br> AT FINTRACT GLOBAL <br></br>
-          JOIN THE TEAM
-        </h1>
-
-        <h3 className=" text-white  py-5">
-          Join us in the Development of Cutting Edge Fintech Products <br></br>{" "}
-          and accelerate your Career Growth
-        </h3>
-      </div>
-      <div></div>
+      <Content />
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
-
       {/* Header */}
       <div className="flex flex-col items-center ">
-        <div className="w-1/2">
-          <div className="bg-blue-200 p-2 rounded-md shadow-lg text-white flex flex-row items-center w-40 h-10">
-            <CiLocationOn className="text-black" />
-            <h3 className="p-2 text-black">Overview</h3>
-          </div>
-          <h4>
-            Fintract Global is providing opportunities that constantly challenge
-            management and technical trainee programme to learn and develop in a
-            fast-paced environment. We are looking for students who are driven
-            and motivated to work with some of the brightest minds in the
-            management consulting world. You’ll connect with mentors and
-            experts, who will help you delve deeper into the intricacies of the
-            corporate world. These roles will equip you with the nuances of
-            business strategy through several hands-on and practical
-            experiences.
-          </h4>
-          <br></br>
-          <h1 className="text-blue-400">Find Your Perfect Role</h1>
-          <h2>
-            Fintract Global provides management and technical trainee programme
-            to suitable candidates who:
-          </h2>
-          <li>Are available for a minimum work duration of 4 months.</li>
-          <li>
-            Demonstrate unflinching commitment and dedication towards the
-            company and its business interests.
-          </li>
-          <li>
-            Are pursuing programs/have graduated from distinguished
-            institutes/universities and possess the requisite skills and
-            interests, for various arenas
-          </li>
-          <li>
-            Are willing to gain practical exposure under the mentorship of
-            experienced professionals in their selected fields.
-          </li>
-        </div>
-
+        <Header />
         {/* Explore Career Page */}
-        <hr class="w-40 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-10 dark:bg-blue-500"></hr>
-        <br></br>
-        <h1 className="text-2xl">
-          {" "}
-          Explore <span className="text-blue-400">Career </span> Areas
-        </h1>
-        <br></br>
-        <div className="grid grid-cols-3 gap-4 place-items-center">
-          <div className="bg-white p-2 w-1/2 text-center shadow-lg shadow-indigo-500/40 rounded-lg ">
-            <img src="src\assets\certificate-of 1.png" alt="Group-1" />
-            <p> Marketing and Sales</p>
-            <p>(CEO)</p>
-          </div>
-          <div className="bg-white p-2 w-1/2 text-center shadow-lg shadow-indigo-500/40 rounded-lg ">
-            <img
-              src="src\assets\istockphoto-821787126-612x612 1.png"
-              alt="Group-1"
-            />
-            <p> Design and content writing</p>
-          </div>
-          <div className="bg-white p-2 w-1/2 text-center shadow-lg shadow-indigo-500/40 rounded-lg">
-            <img
-              src="src\assets\human-resource-vector-concept-logo_579179-1818  1.png"
-              alt="Group-1"
-            />
-            <p> Human resources and Management</p>
-          </div>
-          <div className="bg-white p-2 w-1/2 text-center shadow-lg shadow-indigo-500/40 rounded-lg">
-            <img src="src\assets\computer-repair-logo-template-computer-pixels-logo-software-development-design-free-vector 1.png" />
-            <p> Finance and Marketing</p>
-          </div>
-          <div className="bg-white p-2 w-1/2 text-center shadow-lg shadow-indigo-500/40 rounded-lg">
-            <img src="src\assets\download 3.png" />
-            <p> Software development and engineering</p>
-          </div>
-          <div className="bg-white p-2 w-1/2 text-center shadow-lg shadow-indigo-500/40 rounded-lg">
-            <img src="src\assets\images 1.png" alt="Group-1" />
-            <p> Product and corporate management</p>
-          </div>
-        </div>
-        <hr class="w-40 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-10 dark:bg-blue-500"></hr>
-        <div className="flex flex-col items-center">
-          <h1 className="text-2xl">
-            {" "}
-            Additional <span className="text-blue-400">Perks </span> and{" "}
-            <span className="text-blue-400">Benefits </span>
-          </h1>
-          <img src="src/assets/career page riya.png" alt="career page" />
-        </div>
+        <Explore />
       </div>
-
-      <hr class="w-40 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-10 dark:bg-blue-500"></hr>
-
       {/* Form */}
-
-      <div className="place-items-center flex">
-        <div className="grid grid-cols-2 gap-4 p-5">
-          <input type="text" placeholder="Name" className="p-2" />
-          <input type="email" placeholder="Email" className="p-2" />
-          <input type="tel" placeholder="Phone" className="p-2" />
-          <input type="url" placeholder="LinkedIn Profile" className="p-2" />
-          <input
-            type="text"
-            placeholder="Which role you are interested in?"
-            className="p-2"
-          />
-          <div className="flex flex-row">
-            <input type="text" placeholder="Upload Resume" className="p-2" />
-            <button className="bg-blue-500 p-2 rounded-md">Browse Files</button>
-          </div>
-          <div className="flex flex-row items-center">
-            <input
-              type="text"
-              placeholder="Message"
-              className="p-2"
-            />
-            <BsFillSendFill />
-          </div>
-          <button type="submit" placeholder="Sign Up" className="text-black bg-blue-700 rounded-md w-full">Sign Up</button>
-        </div>
-        <section className="h-screen bg-Hero bg-no-repeat bg-cover w-1/2">
-          <div className="flex flex-col justify-center text-center items-center h-3/4">
-            <p className="md:text-3xl text-1xl text-white py-5">
-              Interested <span className="text-green-300">in joining </span>the
-              team but not{" "}
-              <span className="text-green-300">ready to apply</span> or dont{" "}
-              <span className="text-green-300">see the right oppurtunity?</span>
-            </p>
-            <p className="md:text-1xl text-1xl text-white py-5">
-              Sign up - We’ll keep you up to date with the latest from the team
-              at segment and let you know when we have a new role that may be a
-              fit.
-            </p>
-          </div>
-        </section>
-      </div>
-
+      <Forms />
+      <br></br>
       {/* Footer */}
-      <div className="bg-black z-0">
-        <div className="flex flex-2">
-          <div className="p-4 m-4">
-            <img src="src/assets/Logo.png" alt="Group-1" />
-            <h1>Fintract Global</h1>
-            <p className="text-white">
-              At Fintract Global Ltd, we combine a cutting-edge tech stack with
-              exceptional talent from Europe, Asia and America to lead change in
-              how financial entities work. Headquartered in London, Fintract
-              Global develops cutting edge fintech and regtech products.
-            </p>
-            <div className="flex felx-row">
-              <FaTwitter className="h-8 w-8 pr-2 text-blue-400" />
-              <FaInstagram className="h-8 w-8 pr-2 text-white" />
-              <FaFacebookF className="h-8 w-8 pr-2 text-blue-400" />
-              <FaLinkedinIn className="h-8 w-8 pr-2 text-blue-400 " />
-            </div>
-          </div>
-          <div className="flex flex-col pt-2">
-            <div className="p-2 flex flex-row items-center">
-              <CiLocationOn className=" h-9 w-20 bg-white rounded-full" />
-              <p className="text-white pl-3">
-                <span className="font-semibold text-white">Address</span>
-                <br></br>Registered Office: London Office Address 71-75, Sheldon
-                Street, Covent Garden London, WC2h 9JQ
-              </p>
-            </div>
-            <div className="p-2 flex flex-row items-center">
-              <FiPhoneCall className="text-black h-10 w-10 px-2 bg-white rounded-full items-center" />
-              <p className="text-white pl-3">
-                <span className="font-semibold text-white">Phone</span>
-                <br></br> +44-2037373227
-              </p>
-            </div>
-            <div className="p-2 flex flex-row items-center">
-              <AiOutlineMail className="bg-white h-10 w-10 px-2 rounded-full" />
-              <p className="text-white pl-3">
-                <span className="font-semibold">Email</span>
-                <br></br> contact@fintract.co.uk
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <p className="text-center text-white">
-            Fintract Global takes your privacy very seriously. We may process
-            your personal information for carefully considered and specific
-            purposes which are in our interests and enable us to enhance the
-            services we provide, but which we believe also benefit our
-            customers. View our Privacy Policy to learn more about these
-            interests and when we may process your information in this way.
-          </p>
-          <a href="src/components/contact.jsx">Click here</a>
-          <p className="text-white">Copyright ©2021 All rights reserved.</p>
-        </div>
-      </div>
+      <Footer />
     </section>
   );
 };
