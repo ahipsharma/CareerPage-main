@@ -5,7 +5,7 @@ function Explore() {
     <div>
       <hr class="w-40 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-10 dark:bg-blue-500"></hr>
         <br></br>
-        <h1 className="text-2xl">
+        <h1 className="text-2xl text-center">
           {" "}
           Explore <span className="text-blue-400">Career </span> Areas
         </h1>
