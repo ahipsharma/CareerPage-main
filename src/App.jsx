@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Explore from "./components/Explore";
 import Forms from "./components/Form";
 import Content from "./components/Content";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
       <br></br>
       {/* Footer */}
       <Footer />
+      <Contact />
     </section>
   );
 };
