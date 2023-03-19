@@ -17,8 +17,9 @@ function Contact() {
 
       <h1 className="text-4xl font-bold text-white text-center">Fintract Global</h1>
       <h1 className="text-4xl text-white text-center">Contact Us</h1>
+      <br></br>
       <p className='text-center text-white justify-around text-1xl'>Have an inquiry or some feedback for us? <br></br>We are here for you. Send us a message.</p>
-
+      <br></br>
       <div className='place-items-center flex flex-2 bg-white items-center justify-center'>
         <div className="border-4 border-black place-items-center flex justify-center rounded-3xl">
         <div>

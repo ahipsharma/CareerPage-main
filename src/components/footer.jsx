@@ -21,7 +21,7 @@ function Footer() {
               Global develops cutting edge fintech and regtech products.
             </p>
             <div className="flex felx-row">
-              <FaTwitter className="h-8 w-8 pr-2 text-blue-400" />
+              <a href="/" className="cursor-pointer"><FaTwitter className="h-8 w-8 pr-2 text-blue-400" /></a>
               <FaInstagram className="h-8 w-8 pr-2 text-white" />
               <FaFacebookF className="h-8 w-8 pr-2 text-blue-400" />
               <FaLinkedinIn className="h-8 w-8 pr-2 text-blue-400 " />
