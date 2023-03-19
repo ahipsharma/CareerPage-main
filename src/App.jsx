@@ -8,6 +8,8 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { BsFillSendFill} from "react-icons/bs";
+import contact from "./components/contact";
 
 const App = () => {
   return (
@@ -33,6 +35,8 @@ const App = () => {
       <br></br>
       <br></br>
       <br></br>
+
+      {/* Header */}
       <div className="flex flex-col items-center ">
         <div className="w-1/2">
           <div className="bg-blue-200 p-2 rounded-md shadow-lg text-white flex flex-row items-center w-40 h-10">
@@ -71,6 +75,8 @@ const App = () => {
             experienced professionals in their selected fields.
           </li>
         </div>
+
+        {/* Explore Career Page */}
         <hr class="w-40 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-10 dark:bg-blue-500"></hr>
         <br></br>
         <h1 className="text-2xl">
@@ -122,47 +128,90 @@ const App = () => {
         </div>
       </div>
 
-
       <hr class="w-40 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-10 dark:bg-blue-500"></hr>
 
+      {/* Form */}
 
-      <div classname="bg-black">
+      <div className="place-items-center flex">
+        <div className="grid grid-cols-2 gap-4 p-5">
+          <input type="text" placeholder="Name" className="p-2" />
+          <input type="email" placeholder="Email" className="p-2" />
+          <input type="tel" placeholder="Phone" className="p-2" />
+          <input type="url" placeholder="LinkedIn Profile" className="p-2" />
+          <input
+            type="text"
+            placeholder="Which role you are interested in?"
+            className="p-2"
+          />
+          <div className="flex flex-row">
+            <input type="text" placeholder="Upload Resume" className="p-2" />
+            <button className="bg-blue-500 p-2 rounded-md">Browse Files</button>
+          </div>
+          <div className="flex flex-row items-center">
+            <input
+              type="text"
+              placeholder="Message"
+              className="p-2"
+            />
+            <BsFillSendFill />
+          </div>
+          <button type="submit" placeholder="Sign Up" className="text-black bg-blue-700 rounded-md w-full">Sign Up</button>
+        </div>
+        <section className="h-screen bg-Hero bg-no-repeat bg-cover w-1/2">
+          <div className="flex flex-col justify-center text-center items-center h-3/4">
+            <p className="md:text-3xl text-1xl text-white py-5">
+              Interested <span className="text-green-300">in joining </span>the
+              team but not{" "}
+              <span className="text-green-300">ready to apply</span> or dont{" "}
+              <span className="text-green-300">see the right oppurtunity?</span>
+            </p>
+            <p className="md:text-1xl text-1xl text-white py-5">
+              Sign up - We’ll keep you up to date with the latest from the team
+              at segment and let you know when we have a new role that may be a
+              fit.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      {/* Footer */}
+      <div className="bg-black z-0">
         <div className="flex flex-2">
           <div className="p-4 m-4">
             <img src="src/assets/Logo.png" alt="Group-1" />
             <h1>Fintract Global</h1>
-            <p>
+            <p className="text-white">
               At Fintract Global Ltd, we combine a cutting-edge tech stack with
               exceptional talent from Europe, Asia and America to lead change in
               how financial entities work. Headquartered in London, Fintract
               Global develops cutting edge fintech and regtech products.
             </p>
             <div className="flex felx-row">
-              <FaTwitter className="h-7 w-7 pr-2" />
-              <FaInstagram className="h-7 w-7 pr-2" />
-              <FaFacebookF className="h-7 w-7 pr-2" />
-              <FaLinkedinIn className="h-7 w-7 pr-2" />
+              <FaTwitter className="h-8 w-8 pr-2 text-blue-400" />
+              <FaInstagram className="h-8 w-8 pr-2 text-white" />
+              <FaFacebookF className="h-8 w-8 pr-2 text-blue-400" />
+              <FaLinkedinIn className="h-8 w-8 pr-2 text-blue-400 " />
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col pt-2">
             <div className="p-2 flex flex-row items-center">
-              <CiLocationOn className="text-black h-20 w-20" />
-              <p>
-                <span className="font-semibold">Address</span>
+              <CiLocationOn className=" h-9 w-20 bg-white rounded-full" />
+              <p className="text-white pl-3">
+                <span className="font-semibold text-white">Address</span>
                 <br></br>Registered Office: London Office Address 71-75, Sheldon
                 Street, Covent Garden London, WC2h 9JQ
               </p>
             </div>
             <div className="p-2 flex flex-row items-center">
-              <FiPhoneCall className="text-black h-10 w-10 px-2" />
-              <p>
-                <span className="font-semibold">Phone</span>
+              <FiPhoneCall className="text-black h-10 w-10 px-2 bg-white rounded-full items-center" />
+              <p className="text-white pl-3">
+                <span className="font-semibold text-white">Phone</span>
                 <br></br> +44-2037373227
               </p>
             </div>
             <div className="p-2 flex flex-row items-center">
-              <AiOutlineMail className="text-black h-10 w-10 px-2" />
-              <p>
+              <AiOutlineMail className="bg-white h-10 w-10 px-2 rounded-full" />
+              <p className="text-white pl-3">
                 <span className="font-semibold">Email</span>
                 <br></br> contact@fintract.co.uk
               </p>
@@ -170,7 +219,7 @@ const App = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <p className="text-center">
+          <p className="text-center text-white">
             Fintract Global takes your privacy very seriously. We may process
             your personal information for carefully considered and specific
             purposes which are in our interests and enable us to enhance the
@@ -178,8 +227,8 @@ const App = () => {
             customers. View our Privacy Policy to learn more about these
             interests and when we may process your information in this way.
           </p>
-          <a href="https://www.fintract.co.uk/privacy-policy/">Click here</a>
-          <p>Copyright ©2021 All rights reserved.</p>
+          <a href="src/components/contact.jsx">Click here</a>
+          <p className="text-white">Copyright ©2021 All rights reserved.</p>
         </div>
       </div>
     </section>

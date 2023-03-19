@@ -24,8 +24,8 @@ const Navbar = () => {
         {/* Mobile nav */}
         <ul
           className={`
-        md:hidden flex-col bg-blue-800 fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
-        duration-500 ${open ? "left-0" : "left-[-100%]"}
+          md:hidden flex-col bg-blue-800 fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+          duration-500 ${open ? "left-0" : "left-[-100%]"}
         `}
         >
           <li>
@@ -35,10 +35,10 @@ const Navbar = () => {
           </li>
           <NavLinks />
           <div className="flex flex-col items-center">
-      <input type="button" value="Search Fg"  className="bg-white text-black px-6 py-2 rounded-full m-2" />
-      <input type="button" value="Login"  className="bg-white text-black px-6 py-2 m-2" />
-      <input type="button" value="Sign up"  className="bg-black text-white px-6 py-2 m-2" />
-    </div>
+            <input type="button" value="Search Fg"  className="bg-white text-black px-6 py-2 rounded-full m-2" />
+            <input type="button" value="Login"  className="bg-white text-black px-6 py-2 m-2" />
+            <input type="button" value="Sign up"  className="bg-black text-white px-6 py-2 m-2" />
+          </div>
         </ul>
       </div>
     </nav>
