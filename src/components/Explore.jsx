@@ -18,7 +18,7 @@ function Explore() {
           </div>
           <div className="bg-white p-2 w-1/2 text-center shadow-lg shadow-indigo-500/40 rounded-lg ">
             <img
-              src="src\assets\istockphoto-821787126-612x612 1.png"
+              src="../../assets/istockphoto-821787126-612x612 1.png"
               alt="Group-1"
             />
             <p> Design and content writing</p>
