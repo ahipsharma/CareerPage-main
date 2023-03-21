@@ -6,13 +6,14 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import Logo from "../assets/Logo.png";
 
 function Footer() {
   return (
     <div className="bg-black z-0">
         <div className="flex flex-2">
           <div className="p-4 m-4">
-            <img src="src/assets/Logo.png" alt="Group-1" />
+            <img src={Logo} alt="Group-1" />
             <h1>Fintract Global</h1>
             <p className="text-white">
               At Fintract Global Ltd, we combine a cutting-edge tech stack with
