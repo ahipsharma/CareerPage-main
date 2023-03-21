@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './../assets/certificate-of 1.png'
+import Logo from './../assets/certificate-of1.png'
 
 function Explore() {
   return (
